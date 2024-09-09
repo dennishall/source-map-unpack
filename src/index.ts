@@ -51,7 +51,7 @@ try {
     console.log(chalk.green(`Unpacking 🛍  your source maps 🗺`));
     const sources = (consumer as any).sources;
     sources.forEach((source: string) => {
-      const WEBPACK_SUBSTRING_INDEX = 11;
+      const WEBPACK_SUBSTRING_INDEX = 10;
       const content = consumer.sourceContentFor(source) as string;
       const filePath = `${process.cwd()}/${projectNameInput}/${source.substring(
         WEBPACK_SUBSTRING_INDEX,
